@@ -1,0 +1,205 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>Canvas tutorial</title>
+    <script type="text/javascript">
+
+
+    function draw() {
+
+
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.beginPath();
+ctx.arc(200, 175, 85, 0*Math.PI, 2 * Math.PI);
+ ctx.fillStyle = 'rgb( 255, 255, 85)' ;
+ctx.fill();
+ctx.closePath();
+
+//black border
+ctx.beginPath();
+ctx.arc(200, 175, 85, 0*Math.PI, 2 * Math.PI);
+ctx.lineWidth = 5;
+ctx.strokeStyle="black";
+ ctx.stroke();
+ 
+//ctx.fill();
+ctx.closePath();
+
+//2nd shade
+ctx.beginPath();
+ctx.arc(198, 172, 80, 0*Math.PI, 2 * Math.PI);
+ ctx.fillStyle = 'rgb(255,204,0)' ;
+ctx.fill();
+ctx.closePath();
+
+//eyes
+
+ctx.beginPath();
+ctx.arc(170, 155, 20, 0*Math.PI, 2 * Math.PI);
+
+ ctx.fillStyle = 'black';
+
+ctx.fill();
+ctx.closePath();
+
+//white ball
+
+ctx.beginPath();
+ctx.ellipse(165, 148, 9,14 ,Math.PI/3.2,0,2*Math.PI);
+
+ctx.stroke();
+ ctx.fillStyle = 'white';
+ctx.fill();
+ctx.closePath();
+
+
+//white ball 11
+
+ctx.beginPath();
+ctx.ellipse(177, 163, 4,6 ,Math.PI/3.2,0,2*Math.PI);
+ctx.stroke();
+ ctx.fillStyle = 'white';
+ctx.fill();
+ctx.closePath();
+
+
+
+
+
+
+
+//2nd eye
+ctx.beginPath();
+ctx.arc(240, 155, 20, 0*Math.PI, 2 * Math.PI);
+
+ ctx.fillStyle = 'black';
+ctx.fill();
+ctx.closePath();
+
+//2nd white eyes
+
+ctx.beginPath();
+ctx.ellipse(235, 148, 9,14 ,Math.PI/3.2,0,2*Math.PI);
+
+ctx.stroke();
+ ctx.fillStyle = 'white';
+ctx.fill();
+ctx.closePath();
+
+//white ball 22
+
+ctx.beginPath();
+ctx.ellipse(245, 163, 4,6 ,Math.PI/3.2,0,2*Math.PI);
+
+ctx.stroke();
+ ctx.fillStyle = 'white';
+ctx.fill();
+ctx.closePath();
+
+
+
+
+//mouth
+
+
+ctx.beginPath();
+ctx.arc(205, 218, 20, .96*Math.PI, 2.05 * Math.PI);
+
+ ctx.fillStyle = '#331100';
+  ctx.lineWidth = 10;
+ ctx.strokeStyle="black";
+
+  ctx.stroke();
+  ctx.fill();
+  ctx.closePath();
+
+  //nose
+  ctx.beginPath();
+  ctx.arc(205, 188, 7, 1*Math.PI, 2 * Math.PI);
+ 
+  ctx.fillStyle = 'black';
+   ctx.lineWidth = 3;
+  ctx.stroke();
+   ctx.fill();
+  ctx.closePath();
+
+  //moustache
+
+      ctx.beginPath();
+    ctx.moveTo(205, 186);
+    ctx.lineTo(212, 178);
+    ctx.lineWidth = 3;
+   
+     ctx.stroke();
+     ctx.closePath();
+
+     //
+     ctx.beginPath();
+    ctx.moveTo(205, 186);
+    ctx.lineTo(198, 178);
+    ctx.lineWidth = 3;
+   
+     ctx.stroke();
+     ctx.closePath();
+
+
+     //hat
+
+  ctx.beginPath();
+  ctx.ellipse(200, 96, 10,80 ,Math.PI/2,0,2*Math.PI);
+  ctx.fillStyle = ' #ff4000';
+  ctx.lineWidth = 7;
+
+  ctx.fill();
+    ctx.stroke();
+  ctx.closePath();
+
+  //upper hat
+
+  ctx.beginPath();
+ctx.arc(200, 129, 70, 1.2*Math.PI, 1.8 * Math.PI);
+
+ ctx.fillStyle = '#ff8000';
+  ctx.lineWidth = 10;
+ ctx.strokeStyle="black";
+
+  ctx.stroke();
+  ctx.fill();
+  ctx.closePath();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+   </script>
+    <style type="text/css">
+      canvas { border: 1px solid black; }
+
+      #myCanvas
+      {
+        margin-left: 300px;
+        padding-left: 100px;
+        padding-top: 50px;
+      }
+    </style>
+  </head>
+  <body onload="draw();">
+    <canvas id="myCanvas" width="500" height="400"></canvas>
+  </body>
+</html>
