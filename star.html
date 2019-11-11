@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>Canvas tutorial</title>
+    <script type="text/javascript">
+
+    function draw() {
+  var canvas = document.getElementById('tutorial');
+  if (canvas.getContext) {
+    var ctx = canvas.getContext('2d');
+
+    ctx.beginPath();
+
+     ctx.moveTo(5, 200);
+     ctx.lineTo(110, 200);
+    ctx.strokeStyle = 'rgb(255, 255, 255)';
+     ctx.lineTo(150, 100);
+
+    ctx.lineTo(180, 200);
+     ctx.lineTo(290, 200);
+     ctx.lineTo(210, 265);
+     ctx.lineTo(230, 370);
+
+      ctx.lineTo(140, 300);
+      ctx.lineTo(45, 370);
+     ctx.lineTo(80, 260);
+
+
+    //ctx.clearRect(145, 145, 20, 20);
+    // ctx.closePath();
+    //  ctx.stroke();
+       ctx.fill();
+
+
+
+
+    ctx.beginPath();
+    ctx.fillStyle = 'rgb(255, 255, 255)';
+    ctx.moveTo(40, 213);
+    ctx.lineTo(142, 247);
+   ctx.lineTo(93, 250);
+    //ctx.lineWidth = 10;
+    ctx.fillStyle = "rgb(255, 255, 255)";
+
+   ctx.closePath();
+    ctx.fill();
+
+    ///2nd
+
+    ctx.beginPath();
+    ctx.fillStyle = 'rgb(255, 255, 255)';
+    ctx.moveTo(149, 130);
+    ctx.lineTo(125, 197);
+   ctx.lineTo(142, 247);
+    //ctx.lineWidth = 10;
+    ctx.fillStyle = "rgb(255, 255, 255)";
+
+   ctx.closePath();
+    ctx.fill();
+
+
+    ///3rd
+    ctx.beginPath();
+    ctx.fillStyle = 'rgb(255, 255, 255)';
+    ctx.moveTo(142, 247);
+    ctx.lineTo(250, 213);
+   ctx.lineTo(180, 215);
+    //ctx.lineWidth = 10;
+    ctx.fillStyle = "rgb(255, 255, 255)";
+
+   ctx.closePath();
+    ctx.fill();
+
+    //4th
+   ctx.beginPath();
+    ctx.fillStyle = 'rgb(255, 255, 255)';
+    ctx.moveTo(142, 247);
+    ctx.lineTo(137, 290);
+   ctx.lineTo(57, 350);
+    //ctx.lineWidth = 10;
+    ctx.fillStyle = "rgb(255, 255, 255)";
+
+   ctx.closePath();
+    ctx.fill();
+
+    ///5th
+
+       ctx.beginPath();
+    ctx.fillStyle = 'rgb(255, 255, 255)';
+    ctx.moveTo(142, 247);
+    ctx.lineTo(195, 268);
+   ctx.lineTo(214, 350);
+    //ctx.lineWidth = 10;
+    ctx.fillStyle = "rgb(255, 255, 255)";
+
+   ctx.closePath();
+    ctx.fill();
+
+
+
+
+
+
+
+    
+  }
+}
+   </script>
+    <style type="text/css">
+      canvas { border: 1px solid black; }
+    </style>
+  </head>
+  <body onload="draw();">
+    <canvas id="tutorial" width="500" height="500"></canvas>
+  </body>
+</html>
